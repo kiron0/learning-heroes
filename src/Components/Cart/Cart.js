@@ -12,8 +12,8 @@ const Cart = (props) => {
         <div className='cart reverse-main'>
             <h2>Total Budget: $ 10000</h2>
             <h3>Order Summary</h3>
-            <p>Total Selected Course: {cart.length}</p>
-            <p>Total Price: $ {grandTotal}</p>
+            <p>Total Selected Course: <span className='cart-length'>{cart.length}</span></p>
+            <p>Total Price: <span className='grand-total'>$ {grandTotal}</span></p>
             {
                     cart.map(courseInfo => <DisplayAddedHeroes
                         key={courseInfo.id}

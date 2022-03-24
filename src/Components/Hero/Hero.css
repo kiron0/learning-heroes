@@ -24,10 +24,11 @@
     background: transparent;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    font-size: 15px;
     cursor: pointer;
 }
 .addToCart:hover{
-    background-image: linear-gradient(180deg, rgba(201, 201, 201, 0.027), rgba(189, 186, 186, 0.089));
+    background-image: linear-gradient(180deg, rgba(117, 117, 117, 0.027), rgba(66, 65, 65, 0.089));
 }
 
 .star{

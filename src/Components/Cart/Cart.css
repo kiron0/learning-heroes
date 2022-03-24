@@ -4,3 +4,8 @@
     text-align: center;
     top: 125px;
 }
+
+.grand-total,
+.cart-length{
+    font-weight: 600;
+}

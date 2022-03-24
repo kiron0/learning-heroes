@@ -9,7 +9,7 @@ const Heroes = () => {
     useEffect(() => {
         fetch('https://raw.githubusercontent.com/kiron0/fakeData/main/fakeData.json')
         .then(res => res.json())
-        .then(data => setHeroes(data.slice(0, 14)));
+        .then(data => setHeroes(data));
     }, []);
 
     /* Cart functionality */
