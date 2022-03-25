@@ -3,10 +3,8 @@ import { FiDelete } from 'react-icons/fi';
 import './DisplayAddedHeroes.css'
 
 const DisplayAddedHeroes = (props) => {
+    const {removeFromCart} = props;
     const { instructor, image, id } = props.courseInfo;
-    const removeFromCart = (id) => {
-        console.log(id);
-    }
     return (
         <div>
             <h5 className="course-info"> 

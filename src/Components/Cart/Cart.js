@@ -3,7 +3,7 @@ import './Cart.css'
 import DisplayAddedHeroes from '../DisplayAddedHeroes/DisplayAddedHeroes';
 
 const Cart = (props) => {
-    const {cart} = props;
+    const {cart, removeFromCart} = props;
     let grandTotal = 0;
     for(const price of cart){
         grandTotal = grandTotal + price.price;
@@ -17,7 +17,7 @@ const Cart = (props) => {
             {
                     cart.map(courseInfo => <DisplayAddedHeroes
                         key={courseInfo.id}
-                        courseInfo={courseInfo}
+                        courseInfo={courseInfo} removeFromCart={removeFromCart}
                     ></DisplayAddedHeroes>)
                 }
         </div>
