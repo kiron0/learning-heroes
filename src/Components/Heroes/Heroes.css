@@ -26,4 +26,10 @@
         gap: 15px;
         margin: 0 auto;
     }
+    .reverse-main{
+        order: 1;
+        position: sticky;
+        margin: 0 auto;
+        top: 0;
+    }
 }

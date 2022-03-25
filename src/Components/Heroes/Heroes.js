@@ -24,7 +24,7 @@ const Heroes = () => {
     };
     return (
         <div className='course-container'>
-            <div className='heroes-container'>
+            <div className='heroes-container reverse-main'>
             {
                 heroes.map(hero => <Hero key={hero.id} learningHeroes={hero} handleAddToCart={handleAddToCart}></Hero>)
             }

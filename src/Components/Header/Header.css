@@ -5,10 +5,9 @@
     display: flex;
     align-items: center;
     height: 80px;
-    justify-content: center;
-    /* justify-content: space-between;
+    justify-content: space-between;
     padding-left: 140px;
-    padding-right: 140px; */
+    padding-right: 140px;
     background-image: linear-gradient(180deg, rgba(201, 201, 201, 0.027), rgba(189, 186, 186, 0.089));
     backdrop-filter: blur(5px);
     color: rgb(77, 72, 72);
@@ -23,4 +22,73 @@
 }
 .header a:hover{
     color: orange;
+}
+
+.navbar-items {
+    display: flex;
+}
+.navbar-items li {
+    list-style: none;
+    margin: 10px;
+}
+.checkbtn {
+    font-size: 25px;
+    color: #000;
+    float: left;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+
+@media screen and (max-width: 490px) {
+    .navbar-items {
+        display: block;
+        text-align: center;
+      }
+      nav ul {
+        position: absolute;
+        width: 100%;
+        background: transparent;
+        background-image: linear-gradient(180deg, rgba(117, 117, 117, 0.027), rgba(66, 65, 65, 0.089));
+        backdrop-filter: blur(15px);
+        top: 80px;
+        left: -120%;
+        transition: all 0.5s;
+        padding: 20px;
+        overflow: hidden;
+      }
+      nav ul li {
+        display: block;
+        line-height: 30px;
+      }
+      nav ul li a {
+        margin-left: -3rem;
+        font-size: 17px;
+        color: rgb(77, 72, 72);
+      }
+      .checkbtn {
+        display: block;
+      }
+      .nav-bar-icon{
+        font-size: 30px;
+        margin-right: -12rem;
+        margin-top: 30px;
+        background: transparent;
+      }
+      #check:checked ~ ul {
+        left: 0;
+      }
+      .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .header h2{
+        font-size: 19px;
+        margin-left: -7rem;
+      }
 }
